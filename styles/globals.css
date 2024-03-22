@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: #09090a;
+  color: #fff;
+}
 .text-14-bold {
   font-size: 14px;
   font-weight: bold;
@@ -47,7 +51,7 @@
 }
 
 .navigation {
-  background: #fff;
+  background: #09090a;
   height: 54px;
   width: 100%;
   
@@ -225,6 +229,7 @@
 
   .feed-item-container {
     margin-bottom: 12px;
+    width: 100%;
   }
 
   .box {
@@ -232,9 +237,7 @@
     background-color: transparent;
   }
 
-  .feed-item-header {
-    background-color: #fafafa;
-  }
+  
 
   .homepage-container {
     padding-top: 64px;

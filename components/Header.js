@@ -35,7 +35,7 @@ const Header = ({ setCreatePostModalOpen }) => {
     } = useGlobalState();
     const username="Ashwin";
     return (
-        <nav className={`navigation fixed z-20 top-0 w-full px-2 `}>
+        <nav className={`navigation bg-[#09090a] fixed z-20 top-0 w-full px-2 `}>
             <div className={` h-[54px] flex  justify-between items-center `}>
                 <div className={`flex items-center gap-2 h-11 w-11 relative mt-[.6rem]`}>
                 <img

@@ -13,7 +13,7 @@ const PostHeader = ({ username, owner, postId }) => {
     } = useGlobalState();
 
     return (
-        <div className="feed-item-header pl-2 pr-4 bg-white flex items-center">
+        <div className="feed-item-header pl-2 pr-4 flex items-center">
             <div className="relative h-[3rem] w-[3rem] mr-2 rounded-full overflow-hidden">
                 <Image
                     src={`https://api.dicebear.com/7.x/micah/svg?hair=dannyPhantom,fonze,mrT,pixie,turban&backgroundType=gradientLinear&backgroundColor=b6e3f4,ffdfbf&seed=${username}.svg`}

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import DisplayName from './common/DisplayName'
-
+import plusIcon from '../public/assets/icons/plus.svg'
 
 
 

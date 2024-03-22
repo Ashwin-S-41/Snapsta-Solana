@@ -55,7 +55,7 @@ export default function Home() {
       />
       <div className='flex w-full lg:gap-3 justify-end '>
       <HomeRightBar className=" " data={  data.suggestions} />
-      <div className={`  lg:pl-4  absolute overflow-hidden bg-[#ebeaea]  rounded-2xl h-[89vh] w-full right-0 flex flex-col  lg:w-[75%]`}>
+      <div className={`  lg:pl-4  absolute overflow-hidden bg-[#000000]  rounded-2xl h-[89vh] w-full right-0 flex flex-col  lg:w-[75%]`}>
         <div className=' overflow-y-scroll scrollingu'>
          <div className='text-2xl font-semibold px-2 pt-2'>Stories</div>         
         <Stories stories={data.stories} />
@@ -63,7 +63,7 @@ export default function Home() {
 <>
   {/* Render posts */}
   <div className='text-2xl font-semibold px-2 pb-2'>Feed</div>
-  <div className='flex flex-wrap '>
+  <div className='flex flex-wrap w-full '>
   {posts
     ?  Object.values(posts)
     .sort((a, b) => b.id - a.id).map((post, i) => (

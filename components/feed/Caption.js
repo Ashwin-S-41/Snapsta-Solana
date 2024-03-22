@@ -2,7 +2,7 @@ import DisplayName from '../common/DisplayName'
 
 const style = {
     wrapper: `overflow-hidden mx-4 text-14-light inherit`,
-    caption: `feed-item-text-description font-semibold`,
+    caption: `feed-item-text-description text-white font-semibold`,
 }
 
 const Caption = ({ data }) => {

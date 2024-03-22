@@ -4,8 +4,8 @@ const DisplayName = ({ username }) => {
 
     return (
         <p
-            className='text-14-bold  mr-1 cursor-pointer'
-        >
+            className='text-14-bold text-white  mr-1 cursor-pointer'
+        > 
             {username}
         </p>
     )

@@ -25,18 +25,18 @@ export default function CreatePostModal({ createPost, createPostModalOpen, setCr
         <Transition appear show={createPostModalOpen} as={Fragment}>
             <Dialog as="div" className="relative z-50" onClose={closeModal}>
                 <Transition.Child as={Fragment} enter="ease-out duration-300" enterFrom="opacity-0" enterTo="opacity-100" leave="ease-in duration-200" leaveFrom="opacity-100" leaveTo="opacity-0">
-                    <div className="fixed inset-0 bg-black bg-opacity-25" />
+                    <div className="fixed inset-0 bg-black bg-opacity-50" />
                 </Transition.Child>
 
-                <div className="fixed inset-0 overflow-y-auto">
-                    <div className="flex min-h-full items-center justify-center p-4 text-center">
+                <div className="fixed inset-0 overflow-y-auto ">
+                    <div className="flex min-h-full items-center  justify-center p-4 text-center">
                         <Transition.Child as={Fragment} enter="ease-out duration-300" enterFrom="opacity-0 scale-95" enterTo="opacity-100 scale-100" leave="ease-in duration-200" leaveFrom="opacity-100 scale-100" leaveTo="opacity-0 scale-95">
-                            <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
-                                <Dialog.Title as="h3" className="text-lg font-medium leading-6 text-gray-900">
+                            <Dialog.Panel className="w-full max-w-md transform overflow-hidden border-2 border-[#1f1f22] rounded-2xl bg-black p-6 text-left align-middle shadow-xl transition-all">
+                                <Dialog.Title as="h3" className="text-lg font-medium leading-6 text-white">
                                     Create Post
                                 </Dialog.Title>
 
-                                <div className="mt-2">
+                                <div className="mt-2 bg-black">
                                     <div className="grid grid-cols-1 gap-3">
                                         <label className="flex flex-col border rounded-lg px-3 py-2" htmlFor="location">
                                             <span className="text-xs font-light">Caption</span>

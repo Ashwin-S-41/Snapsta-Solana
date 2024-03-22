@@ -33,6 +33,7 @@ const nextConfig = {
       'www.crystalknows.com',
       'cdn.profoto.com',
       "ichef.bbci.co.uk",
+      "www.pngall.com",
       'png.pngtree.com'
     ],
   },

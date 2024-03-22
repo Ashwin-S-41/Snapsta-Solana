@@ -9,7 +9,7 @@ import { truncate } from '../utils/truncate'
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 
 const style = {
-    wrapper: `suggestions hidden  w-[25%] fixed left-0 lg:flex lg:flex-col items-center `,
+    wrapper: `suggestions hidden bg-[#09090a]  w-[25%] fixed left-0 lg:flex lg:flex-col items-center `,
     userInfoContainer: `right-bar-user-info flex items-center`,
     imageContainer: `h-[3rem] w-[3rem] relative rounded-full overflow-hidden cursor-pointer border-white border-2`,
     image: `object-cover`,
