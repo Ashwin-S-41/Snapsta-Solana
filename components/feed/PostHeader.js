@@ -10,6 +10,7 @@ const PostHeader = ({ username, owner, postId }) => {
     const {
         hasUserAccount,
         deletePost,
+        wallet,
     } = useGlobalState();
 
     return (
@@ -28,6 +29,7 @@ const PostHeader = ({ username, owner, postId }) => {
             {/* <button className={style.moreIcon}>
                 <AiOutlineClose onClick={() => deletePost(owner, postId)} disabled={!hasUserAccount} />
             </button> */}
+            {owner.toString()==wallet?.publicKey.toString()&&
             <button
                    onClick={() => deletePost(owner, postId)} disabled={!hasUserAccount}
                   variant="ghost"
@@ -38,7 +40,7 @@ const PostHeader = ({ username, owner, postId }) => {
                     width={24}
                     height={24}
                   />
-                </button>
+                </button>}
         </div>
     )
 }
